@@ -1,0 +1,8 @@
+.vscode
+
+#ignore build
+dist/bundle.js
+
+#ignore packages 
+node_modules
+*.log
