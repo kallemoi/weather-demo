@@ -23,3 +23,6 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### Apikeys are environment specific! ###
+apikeys.properties

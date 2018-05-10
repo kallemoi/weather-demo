@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+    <city id="652616" name="Kitee">
+        <coord lon="30" lat="62.01"/>
+        <country>FI</country>
+        <sun rise="2018-05-09T01:21:49" set="2018-05-09T18:33:02"/>
+    </city>
+    <temperature value="288.15" min="288.15" max="288.15" unit="kelvin"/>
+    <humidity value="33" unit="%"/>
+    <pressure value="1025" unit="hPa"/>
+    <wind>
+        <speed value="2.1" name="Light breeze"/>
+        <gusts/>
+        <direction value="190" code="S" name="South"/>
+    </wind>
+    <clouds value="0" name="clear sky"/>
+    <visibility value="10000"/>
+    <precipitation mode="no"/>
+    <weather number="800" value="clear sky" icon="01d"/>
+    <lastupdate value="2018-05-09T14:50:00"/>
+</current>
