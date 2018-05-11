@@ -12,16 +12,19 @@
         <h1 class="mt-5">Weather search</h1>
         <p class="lead">Start by typing in a location</p>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="location..." aria-label="Location" aria-describedby="basic-addon2">
+            <input id="location" type="text" class="form-control" placeholder="location..." aria-label="Location" aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <button id="search" class="btn btn-outline-secondary" type="button">Search</button>
             </div>
         </div>
-        <div style="height: 400px">
+        <div id="map-container" style="height: 400px">
             Map
         </div>
     </main>
     <script src="bundle.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
 </body>
 
 </html>
