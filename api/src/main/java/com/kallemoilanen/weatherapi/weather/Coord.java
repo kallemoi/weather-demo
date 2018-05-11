@@ -1,5 +1,7 @@
 package com.kallemoilanen.weatherapi.weather;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.xml.bind.annotation.XmlAttribute;
 
 public class Coord {
@@ -18,6 +20,7 @@ public class Coord {
         return longitude;
     }
 
+    @JsonProperty("lon")
     @XmlAttribute(name = "lon")
     public void setLongitude(double longitude) {
         this.longitude = longitude;
@@ -27,6 +30,7 @@ public class Coord {
         return latitude;
     }
 
+    @JsonProperty("lat")
     @XmlAttribute(name = "lat")
     public void setLatitude(double latitude) {
         this.latitude = latitude;
