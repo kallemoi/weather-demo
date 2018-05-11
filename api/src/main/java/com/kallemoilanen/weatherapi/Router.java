@@ -1,5 +1,6 @@
 package com.kallemoilanen.weatherapi;
 
+import com.kallemoilanen.weatherapi.geocode.GeocodeHandler;
 import com.kallemoilanen.weatherapi.weather.WeatherHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,9 +12,16 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 
 @Configuration
 public class Router {
+
     @Bean
     public RouterFunction<ServerResponse> weatherRoute(WeatherHandler weatherHandler) {
         return RouterFunctions
                 .route(RequestPredicates.GET("/weather").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)), weatherHandler::weather);
+    }
+
+    @Bean
+    public RouterFunction<ServerResponse> geocodeRoute(GeocodeHandler geocodeHandler) {
+        return RouterFunctions
+                .route(RequestPredicates.GET("/geocode").and(RequestPredicates.accept(MediaType.APPLICATION_JSON)), geocodeHandler::geocodes);
     }
 }

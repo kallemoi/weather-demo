@@ -35,4 +35,26 @@ public class Coord {
     public void setLatitude(double latitude) {
         this.latitude = latitude;
     }
+
+    @Override
+    public boolean equals(Object o) {
+
+        if (o == this) return true;
+        if (!(o instanceof Coord)) {
+            return false;
+        }
+
+        Coord coord = (Coord) o;
+
+        return coord.getLongitude() == longitude &&
+            coord.getLatitude() == latitude;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = 17;
+        result = 31 * result + new Double(longitude).hashCode();
+        result = 31 * result + new Double(latitude).hashCode();
+        return result;
+    }
 }

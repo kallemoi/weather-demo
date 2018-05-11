@@ -44,6 +44,11 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.google.maps</groupId>
+            <artifactId>google-maps-services</artifactId>
+            <version>0.2.7</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -54,6 +59,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
