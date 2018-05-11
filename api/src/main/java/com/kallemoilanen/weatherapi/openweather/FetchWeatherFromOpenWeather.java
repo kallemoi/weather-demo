@@ -21,10 +21,9 @@ public class FetchWeatherFromOpenWeather implements WeatherFetcher {
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
-    public FetchWeatherFromOpenWeather(RestTemplate restTemplate, @Value("${openWeather.apiKey:}") String key) {
+    public FetchWeatherFromOpenWeather(RestTemplate restTemplate, @Value("${openWeather.apiKey:}") String apiKey) {
         this.restTemplate = restTemplate;
-        this.apiKey = key;
-        System.out.println(key);
+        this.apiKey = apiKey;
     }
 
     public CurrentWeather FetchCurrent(Coord coord) {

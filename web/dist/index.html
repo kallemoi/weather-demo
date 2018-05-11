@@ -10,16 +10,22 @@
 <body>
     <main role="main" class="container">
         <h1 class="mt-5">Weather search</h1>
-        <p class="lead">Start by typing in a location</p>
         <div class="input-group mb-3">
-            <input id="location" type="text" class="form-control" placeholder="location..." aria-label="Location" aria-describedby="basic-addon2">
+            <input id="location" type="text" class="form-control" placeholder="address..." aria-label="Location" aria-describedby="basic-addon2">
             <div class="input-group-append">
                 <button id="search" class="btn btn-outline-secondary" type="button">Search</button>
             </div>
         </div>
-        <div id="map-container" style="height: 400px">
-            Map
-        </div>
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div id="map-container" style="height: 400px">
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <div id="weather-container" style="height:400px; display:none;">
+                </div>
+            </div>
+        </row>
     </main>
     <script src="bundle.js"></script>
     <script async defer

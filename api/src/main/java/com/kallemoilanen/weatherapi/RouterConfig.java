@@ -11,7 +11,7 @@ import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
 @Configuration
-public class Router {
+public class RouterConfig {
 
     @Bean
     public RouterFunction<ServerResponse> weatherRoute(WeatherHandler weatherHandler) {
